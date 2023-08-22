@@ -1,6 +1,6 @@
 // import Navbar from '../components/Navbar.js';
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {Link} from "react-router-dom";
 // import tile1 from '../resources/tile.jpg';
 
@@ -8,9 +8,13 @@ import {Link} from "react-router-dom";
 export default function Home(){
     
     const [loader,setLoader]=useState(true);
-    window.onload=function(){
+    // window.onload=function(){
+    //     setLoader(false);
+    //     console.log('started');
+    // }
+    useEffect(()=>{
         setLoader(false);
-    }
+    },[]);
 
     const [shrinkclick,setShrinkclick]=useState(false);
     const handleimgclick = (event) =>{
