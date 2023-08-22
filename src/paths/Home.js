@@ -10,7 +10,7 @@ export default function Home(){
     const [loader,setLoader]=useState(true);
     window.onload=function(){
         setLoader(false);
-        console.log(started);
+        console.log('started');
     }
 
     const [shrinkclick,setShrinkclick]=useState(false);
