@@ -268,8 +268,8 @@ body::-webkit-scrollbar{
     z-index: 10;
 }
 .aboutme p{
-    color: gray;
-    font-weight: 500;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
     transform: rotateZ(-90deg);
     padding: 20px 0px;
     cursor: pointer;
@@ -278,6 +278,10 @@ body::-webkit-scrollbar{
 }
 .aboutme p:hover{
     color: black;
+}
+#aboutme_btn_high{
+    font-weight: 500;
+    color: gray;
 }
 #aboutme_btn_high:hover{
     color: white;
