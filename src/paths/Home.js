@@ -25,7 +25,7 @@ export default function Home(){
     const [mouseover1, setMouseover1] = useState(false);
     const [mouseover2, setMouseover2] = useState(false);
     const [mouseover3, setMouseover3] = useState(false);
-    // const [mouseover4, setMouseover4] = useState(false);
+    const [mouseover4, setMouseover4] = useState(false);
 
     const [clickabout, setClickabout] = useState(false);
     const handleClickabout = (event) =>{
@@ -96,6 +96,23 @@ export default function Home(){
                     </div>
                 </div>
             </section> */}
+
+            {/* PROJECT 4 */}
+            <section className={shrinkclick?'sec shrink':'sec'}>
+                {/* <img src={tile1} className="sec_img" alt=""/> */}
+                <a href="https://krypt-blockchain-amanshrma16.vercel.app/" target="_blank"><div className={mouseover4?'sec3_img opacity project4':'sec3_img clear project4'} onMouseEnter={()=>{setMouseover4(true)}} onMouseLeave={()=>{setMouseover4(false)}} > </div>
+                {/* <video className="sec3_vid" autoPlay loop muted><source src={sg37} type="video/mp4"/></video>   */}
+                </a>
+                <div className={(mouseover4)?'sec_desc desc_on ':'sec_desc desc_off '}>
+                    <h1>KRYPT</h1>
+                    <p>Decentralized Application</p>
+                    <br/><br/>
+                    <p>Implemented a smart contract-based storage system that stores and retrieves transaction history within the blockchain, making Ethereum transfers secure, transparent, and accessible at their fingertips.</p>
+                    <p>Established a platform for users to engage in efficient, direct transactions, reducing the need for intermediaries and enhancing the blockchain network’s value transfer process.</p>
+                </div>
+            </section>
+
+
             {/* PROJECT 1 */}
             <section className={shrinkclick?'sec shrink':'sec'}>
                 {/* <img src={tile1} className="sec_img" alt=""/> */}

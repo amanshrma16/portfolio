@@ -226,6 +226,10 @@ body::-webkit-scrollbar{
     background: url(../src/resources/sg37.jpg) no-repeat center center;
     background-size: cover;
 }
+.project4{
+    background: url(../src/resources/krypt.png) no-repeat center center;
+    background-size: cover;
+}
 .sec_desc {
     color: black;
     position: relative;
